@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 
-
 HEADER_CONTENT_TYPE="Content-Type: application/xml"
 HEADER_ACCEPT="Accept: application/xml"
 
