@@ -1,0 +1,31 @@
+ctx.logger.info('Retrieving existing service parameters...')
+
+ctx.instance.host_ip
+
+ctx.node.properties['root_password']
+
+ctx.instance.runtime_properties[RUNTIME_PROP_HOST_NAME]
+
+ctx.deployment.id
+ctx.node.name
+ctx.node.properties.port
+
+
+fabric:
+
+          implementation: fabric.fabric_plugin.tasks.run_task
+          executor: central_deployment_agent
+          inputs:
+             tasks_file: scripts/exeCommand.py
+             task_name: execute_command
+             fabric_env:
+                 user: { get_input: agent_user }
+                 configFile: running.conf
+                 host_string: { get_attribute: [FortinetFireWall, ip] }
+                 password: { get_input: agent_password }
+
+
+env.???
+
+
+

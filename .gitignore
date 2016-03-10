@@ -1,0 +1,13 @@
+# Created by .ignore support plugin (hsz.mobi)
+.idea/
+*.iml
+.classpath
+.project
+.settings
+MANIFEST.MF
+
+# Package Files #
+*.jar
+*.war
+*.tar.gz
+

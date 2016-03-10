@@ -1,0 +1,7 @@
+config system interface
+	edit port5
+		set mode static
+		set ip 192.168.5.5 PORTMASK
+		set allowaccess ping
+		set alias ALIASNAME
+end

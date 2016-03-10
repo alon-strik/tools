@@ -1,0 +1,3 @@
+
+neutron port-create <net-id> --binding:vnic-type direct
+
